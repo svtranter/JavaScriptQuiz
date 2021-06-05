@@ -35,3 +35,10 @@ label.btn-pink {
     max-width: 200px;
     max-height: 200px;
 }
+
+.card-img-bottom {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
