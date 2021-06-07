@@ -114,7 +114,21 @@
                         <div class="answers">
                             <div class="quiz" id="quiz"> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" id="a1" value="1" onclick="results()"> Leon </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" value="2" id="a2" onclick="results()"> The Matrix </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" id="a3" value="3" onclick="results()"> Inception </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" id="a4" value="4" onclick="results()"> If Only </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" id="a5" value="5" onclick="results()"> Tazza </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" id="a6" value="6" onclick="results()"> You are the Apple of My Eye </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="q8_answer" id="a7" value="7" onclick="results()"> Iron Man </label></div>
                         </div>
-                    </div>                
+                    </div>  
+                    
+                    
+                    <!--Tie break-->
+                    
+                    <div id="tieBreak" class="card">
+                        <div class="question">
+                            <h3>Who is your favourite BT21 character?</h3>
+                            <p>Not sure who to pick... check the characters <a href="https://www.bt21.com/character">here</a></p>
+                        </div>
+                        <div class="answers">
+                            <div class="quiz" id="quiz"> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a1" value="1" onclick="tieBreakResult()"/> Koya </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a2" value="2" onclick="tieBreakResult()"/> RJ </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a3" value="3" onclick="tieBreakResult()"/> Shooky </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a4" value="4" onclick="tieBreakResult()"/> Mang </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a5" value="5" onclick="tieBreakResult()"/> Chimmy </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a6" value="6" onclick="tieBreakResult()"/> Tata </label> <label class="btn btn-lg btn-dark btn-block"><span class="btn-label"></span> <input type="radio" name="tie_answer" id="a7" value="7" onclick="tieBreakResult()"/> Cooky </label></div>
+                        </div>
+                    </div>
+
             </form>
 
             <!--Results-->
@@ -131,8 +145,22 @@
                     </div>
                     </div>
                 </div>
+            </div>
+
+            <!--Tie break result-->
+            <!--For some reason the image does not show-->
+            <div id="tieBreakResult" class="card text-white bg-dark mb-3" style="max-width: 720px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img id="tie-photo">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">You are...</h5>
+                        <p class="card-text" id="tieBreakResult"></p>
+                    </div>
+                    </div>
                 </div>
-                
             </div>
 
         </div>

@@ -3,7 +3,7 @@ html, body {
     text-align: center;
 }
 
-#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #results {
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #results, #tieBreak, #tieBreakResult {
     display:none;
     width:750px;
   }
@@ -31,7 +31,7 @@ label.btn-pink {
     color: white;
 }
 
-#result-photo{
+#result-photo, #tie-photo {
     max-width: 200px;
     max-height: 200px;
 }
@@ -42,3 +42,4 @@ label.btn-pink {
     margin-right: auto;
     
 }
+
