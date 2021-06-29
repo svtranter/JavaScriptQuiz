@@ -43,12 +43,10 @@ function question8() {
 function results() {
     calculateResults();
     document.getElementById("q8").style.display = "none";
-    document.getElementById("results").style.display = "inline-block";
   }
 
 /*Tie break introduced as form freezes when two answers are picked equally, answer to this question is picked despite earlier answers as I don't think I currently have time to think up a better way.*/
 function tieBreak() {
-    document.getElementById("q8").style.display = "none";
     document.getElementById("tieBreak").style.display = "inline-block";
 }
 
@@ -226,9 +224,11 @@ function calculateResults() {
     } else {
         tieBreak();
     }
-
-    document.getElementById("result").innerHTML = msg;
-
+    
+    if (msg != "") {
+        document.getElementById("result").innerHTML = msg;
+        document.getElementById("results").style.display = "inline-block";
+    }
     /*The below code would give an answer without ever needing a tie-break, it is here in case I cannot complete my other method. The answer is sometimes a person that no answers were picked for.*/
     /*let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value) + Number(q6Value) + Number(q7Value) + Number(q8Value);
     let result = total / 8;
