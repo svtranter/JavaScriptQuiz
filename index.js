@@ -55,7 +55,7 @@ function tieBreak() {
 function tieBreakResult() {
     calculateTieResult();
     document.getElementById("tieBreak").style.display = "none";
-    document.getElementById("tieBreakResult").style.display = "inline-block";
+    document.getElementById("results").style.display = "inline-block";
 }
 
 function calculateTieResult() {
@@ -69,37 +69,38 @@ function calculateTieResult() {
     }
     if (Number(tieValue) === 1) {
         msg = "You are our clumsy yet clever leader RM!";
-        document.getElementById('tie-photo').src="rm.jpg";
-        document.getElementById('tie-photo').alt="Headshot of RM";
+        document.getElementById('result-photo').src="rm.jpg";
+        document.getElementById('result-photo').alt="Headshot of RM";
     } else if (Number(tieValue) === 2) {
         msg = "You are Worldwide Handsome Jin!";
-        document.getElementById('tie-photo').src="jin.jpg";
-        document.getElementById('tie-photo').alt="Headshot of Jin";
+        document.getElementById('result-photo').src="jin.jpg";
+        document.getElementById('result-photo').alt="Headshot of Jin";
     } else if (Number(tieValue) === 3) {
         msg = "You are serial napper Suga!";
-        document.getElementById('tie-photo').src="suga.jpg";
-        document.getElementById('tie-photo').alt="Headshot of Suga";
+        document.getElementById('result-photo').src="suga.jpg";
+        document.getElementById('result-photo').alt="Headshot of Suga";
     } else if (Number(tieValue) === 4) {
         msg = "You are strict dance captain and our hope J-Hope!";
-        document.getElementById('tie-photo').src="j-hope.png";
-        document.getElementById('tie-photo').alt="J-Hope smiles and waves at an award show";
+        document.getElementById('result-photo').src="j-hope.png";
+        document.getElementById('result-photo').alt="J-Hope smiles and waves at an award show";
     } else if (Number(tieValue) === 5) {
         msg = "You are modern dancer ChimChim Jimin!";
-        document.getElementById('tie-photo').src="jimin.jpg";
-        document.getElementById('tie-photo').alt="Headshot of Jimin";
+        document.getElementById('result-photo').src="jimin.jpg";
+        document.getElementById('result-photo').alt="Headshot of Jimin";
     } else if (Number(tieValue) === 6) {
         msg = "You are most handsome man of 2020 V!";
-        document.getElementById('tie-photo').src="v.jpg";
-        document.getElementById('tie-photo').alt="Headshot of V";
+        document.getElementById('result-photo').src="v.jpg";
+        document.getElementById('result-photo').alt="Headshot of V";
     } else if (Number(tieValue) === 7) {
         msg = "You are the golden maknae Jungkook!";
-        document.getElementById('tie-photo').src="jungkook.jpg";
-        document.getElementById('tie-photo').alt="Headshot of Jungkook";
+        document.getElementById('result-photo').src="jungkook.jpg";
+        document.getElementById('result-photo').alt="Headshot of Jungkook";
     }
-    document.getElementById("tieBreakResult").innerHTML = msg;
+    document.getElementById("result").innerHTML = msg;
 }
 
 function calculateResults() {
+    let msg = ""
     const radios1 = document.querySelectorAll('input[name="q1_answer"]');
     let q1Value;
     for (const rb of radios1) {
