@@ -66,31 +66,31 @@ function calculateTieResult() {
       }
     }
     if (Number(tieValue) === 1) {
-        msg = "You are our clumsy yet clever leader RM!";
+        msg = "...our clumsy yet clever leader RM!";
         document.getElementById('result-photo').src="rm.jpg";
         document.getElementById('result-photo').alt="Headshot of RM";
     } else if (Number(tieValue) === 2) {
-        msg = "You are Worldwide Handsome Jin!";
+        msg = "...Worldwide Handsome Jin!";
         document.getElementById('result-photo').src="jin.jpg";
         document.getElementById('result-photo').alt="Headshot of Jin";
     } else if (Number(tieValue) === 3) {
-        msg = "You are serial napper Suga!";
+        msg = "...serial napper Suga!";
         document.getElementById('result-photo').src="suga.jpg";
         document.getElementById('result-photo').alt="Headshot of Suga";
     } else if (Number(tieValue) === 4) {
-        msg = "You are strict dance captain and our hope J-Hope!";
+        msg = "...strict dance captain and our hope J-Hope!";
         document.getElementById('result-photo').src="j-hope.png";
         document.getElementById('result-photo').alt="J-Hope smiles and waves at an award show";
     } else if (Number(tieValue) === 5) {
-        msg = "You are modern dancer ChimChim Jimin!";
+        msg = "...modern dancer ChimChim Jimin!";
         document.getElementById('result-photo').src="jimin.jpg";
         document.getElementById('result-photo').alt="Headshot of Jimin";
     } else if (Number(tieValue) === 6) {
-        msg = "You are most handsome man of 2020 V!";
+        msg = "...most handsome man of 2020 V!";
         document.getElementById('result-photo').src="v.jpg";
         document.getElementById('result-photo').alt="Headshot of V";
     } else if (Number(tieValue) === 7) {
-        msg = "You are the golden maknae Jungkook!";
+        msg = "...the golden maknae Jungkook!";
         document.getElementById('result-photo').src="jungkook.jpg";
         document.getElementById('result-photo').alt="Headshot of Jungkook";
     }
@@ -194,31 +194,31 @@ function calculateResults() {
     }
 
     if ((rm > jin) && (rm > suga) && (rm > jhope) && (rm > jimin) && (rm > v) && (rm > jungkook)) {
-        msg = "You are our clumsy yet clever leader RM!";
+        msg = "...our clumsy yet clever leader RM!";
         document.getElementById('result-photo').src="rm.jpg";
         document.getElementById('result-photo').alt="Headshot of RM";
     } else if ((jin > rm) && (jin > suga) && (jin > jhope) && (jin > jimin) && (jin > v) && (jin > jungkook)) {
-        msg = "You are Worldwide Handsome Jin!";
+        msg = "...Worldwide Handsome Jin!";
         document.getElementById('result-photo').src="jin.jpg";
         document.getElementById('result-photo').alt="Headshot of Jin";
     } else if ((suga > rm) && (suga > jin) && (suga > jhope) && (suga > jimin) && (suga > v) && (suga > jungkook)) {
-        msg = "You are serial napper Suga!";
+        msg = "...serial napper Suga!";
         document.getElementById('result-photo').src="suga.jpg";
         document.getElementById('result-photo').alt="Headshot of Suga";
     } else if ((jhope > rm) && (jhope > jin) && (jhope > suga) && (jhope > jimin) && (jhope > v) && (jhope > jungkook)) {
-        msg = "You are strict dance captain and our hope J-Hope!";
+        msg = "...strict dance captain and our hope J-Hope!";
         document.getElementById('result-photo').src="j-hope.png";
         document.getElementById('result-photo').alt="J-Hope smiles and waves at an award show";
     } else if ((jimin > rm) && (jimin > jin) && (jimin > suga) && (jimin > jhope) && (jimin > v) && (jimin > jungkook)) {
-        msg = "You are modern dancer ChimChim Jimin!";
+        msg = "...modern dancer ChimChim Jimin!";
         document.getElementById('result-photo').src="jimin.jpg";
         document.getElementById('result-photo').alt="Headshot of Jimin";
     } else if ((v > rm) && (v > jin) && (v > suga) && (v > jhope) && (v > jimin) && (v > jungkook)) {
-        msg = "You are most handsome man of 2020 V!";
+        msg = "...most handsome man of 2020 V!";
         document.getElementById('result-photo').src="v.jpg";
         document.getElementById('result-photo').alt="Headshot of V";
     } else if ((jungkook > rm) && (jungkook > jin) && (jungkook > suga) && (jungkook > jhope) && (jungkook > jimin) && (jungkook > v)) {
-        msg = "You are the golden maknae Jungkook!";
+        msg = "...the golden maknae Jungkook!";
         document.getElementById('result-photo').src="jungkook.jpg";
         document.getElementById('result-photo').alt="Headshot of Jungkook";
     } else {
